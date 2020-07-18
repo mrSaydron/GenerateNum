@@ -48,4 +48,12 @@ public class GenerateNumTest {
 
         Assert.assertEquals("011", result);
     }
+
+    @Test
+    public void testSix() {
+        List<Integer> numbers = Arrays.asList(2, 3, 4, 5, 6, 7, 8, 9, 10);
+        String result = GenerateNum.generateNum(numbers);
+
+        Assert.assertEquals("001", result);
+    }
 }

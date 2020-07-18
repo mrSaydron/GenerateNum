@@ -28,6 +28,10 @@ public class GenerateNum {
                     break;
                 }
             }
+
+            if (numbersSort.get(0) != 1) {
+                result = numbersSort.get(0) - 1;
+            }
         }
 
         return result;
