@@ -10,11 +10,17 @@ public class GenerateNum {
 
     private static final String TEMPLATE = "%03d";
 
+    /**
+     * Возвращает следующий номер версии в форматированном виде
+     */
     public static String generateNum(List<Integer> numbers) {
         Integer maxValue = findMaxValue(numbers);
         return String.format(TEMPLATE, maxValue);
     }
 
+    /**
+     * Ищет следующий номер версии
+     */
     private static Integer findMaxValue(List<Integer> numbers) {
         Integer result = 1;
 
